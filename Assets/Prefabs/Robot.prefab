@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1594831901784670811}
   - component: {fileID: 3533094189863831885}
   - component: {fileID: 989779036199203459}
+  - component: {fileID: 528739532359165224}
   m_Layer: 6
   m_Name: Robot
   m_TagString: Untagged
@@ -72,6 +73,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   startingHealth: 3
+  robotExplosionVFX: {fileID: 5636483146267975798, guid: 1ac8e2c3a91da644492a3b978ebd6558, type: 3}
 --- !u!114 &1594831901784670811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,6 +131,29 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!136 &528739532359165224
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4968020941427216627}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5275352159565072241
 GameObject:
   m_ObjectHideFlags: 0
